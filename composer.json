@@ -1,0 +1,33 @@
+{
+  "name": "eleven26/sql-logger",
+  "license": "MIT",
+  "type": "library",
+  "description": "A tool for logging SQL for Laravel/Lumen, also compatible with jenssegers/mongodb.",
+  "support": {
+    "issues": "https://github.com/eleven26/sql-logger/issues",
+    "source": "https://github.com/eleven26/sql-logger"
+  },
+  "homepage": "https://github.com/eleven26/sql-logger",
+  "authors": [
+    {
+      "name": "eleven26",
+      "email": "rubymay21s@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Eleven26\\SqlLogger\\": "src"
+    },
+    "files": [
+      "src/sql-logger-helpers.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Eleven26\\SqlLogger\\SqlLoggerServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev"
+}
